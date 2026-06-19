@@ -5,7 +5,13 @@ import '../models/scan_result.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class GeminiService {
-  static final _apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
+  static String get _apiKey {
+    try {
+      return dotenv.env['GEMINI_API_KEY'] ?? '';
+    } catch (_) {
+      return '';
+    }
+  }
   
   final GenerativeModel _model;
 

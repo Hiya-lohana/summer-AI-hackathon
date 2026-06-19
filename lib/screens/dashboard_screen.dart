@@ -15,8 +15,8 @@ import 'profile_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();

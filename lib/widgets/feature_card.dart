@@ -10,13 +10,13 @@ class FeatureCard extends StatefulWidget {
   final int index; // For staggered animation delay
 
   const FeatureCard({
-    Key? key,
+    super.key,
     required this.icon,
     required this.title,
     required this.subtitle,
     required this.onTap,
     required this.index,
-  }) : super(key: key);
+  });
 
   @override
   State<FeatureCard> createState() => _FeatureCardState();

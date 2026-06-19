@@ -10,7 +10,14 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: ".env");
+  try {
+    await dotenv.load(fileName: ".env");
+  } catch (e) {
+    debugPrint("Warning: Could not load .env file. Running with fallback values. Details: $e");
+    try {
+      dotenv.loadFromString(isOptional: true);
+    } catch (_) {}
+  }
   try {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
@@ -31,7 +38,7 @@ void main() async {
 }
 
 class SafenetApp extends StatelessWidget {
-  const SafenetApp({Key? key}) : super(key: key);
+  const SafenetApp({super.key});
 
   @override
   Widget build(BuildContext context) {

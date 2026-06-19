@@ -9,13 +9,13 @@ class StatCard extends StatefulWidget {
   final Color color;
 
   const StatCard({
-    Key? key,
+    super.key,
     required this.label,
     required this.value,
     required this.suffix,
     required this.icon,
     required this.color,
-  }) : super(key: key);
+  });
 
   @override
   State<StatCard> createState() => _StatCardState();

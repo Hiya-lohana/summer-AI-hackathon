@@ -8,10 +8,10 @@ class RiskRingWidget extends StatefulWidget {
   final double score;
 
   const RiskRingWidget({
-    Key? key,
+    super.key,
     required this.riskLevel,
     required this.score,
-  }) : super(key: key);
+  });
 
   @override
   State<RiskRingWidget> createState() => _RiskRingWidgetState();

@@ -9,11 +9,11 @@ class PulseOrbWidget extends StatefulWidget {
   final VoidCallback? onTap;
 
   const PulseOrbWidget({
-    Key? key,
+    super.key,
     required this.type,
     required this.child,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   State<PulseOrbWidget> createState() => _PulseOrbWidgetState();

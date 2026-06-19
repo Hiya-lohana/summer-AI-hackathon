@@ -14,7 +14,7 @@ import '../widgets/risk_ring_widget.dart';
 class PaymentScreen extends StatefulWidget {
   final Function(int)? onNavigate;
 
-  const PaymentScreen({Key? key, this.onNavigate}) : super(key: key);
+  const PaymentScreen({super.key, this.onNavigate});
 
   @override
   State<PaymentScreen> createState() => _PaymentScreenState();

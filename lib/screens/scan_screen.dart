@@ -13,7 +13,7 @@ import '../widgets/risk_ring_widget.dart';
 class ScanScreen extends StatefulWidget {
   final Function(int)? onNavigate;
 
-  const ScanScreen({Key? key, this.onNavigate}) : super(key: key);
+  const ScanScreen({super.key, this.onNavigate});
 
   @override
   State<ScanScreen> createState() => _ScanScreenState();

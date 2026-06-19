@@ -13,7 +13,7 @@ import '../theme/app_theme.dart';
 import '../widgets/sos_button.dart';
 
 class FamilyScreen extends StatefulWidget {
-  const FamilyScreen({Key? key}) : super(key: key);
+  const FamilyScreen({super.key});
 
   @override
   State<FamilyScreen> createState() => _FamilyScreenState();

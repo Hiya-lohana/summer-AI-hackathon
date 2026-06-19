@@ -5,7 +5,7 @@ import '../widgets/scam_tip_card.dart';
 import '../data/tips_data.dart';
 
 class TipsScreen extends StatefulWidget {
-  const TipsScreen({Key? key}) : super(key: key);
+  const TipsScreen({super.key});
 
   @override
   State<TipsScreen> createState() => _TipsScreenState();

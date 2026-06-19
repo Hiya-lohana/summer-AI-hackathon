@@ -7,9 +7,9 @@ class SosButton extends StatefulWidget {
   final VoidCallback onTriggered;
 
   const SosButton({
-    Key? key,
+    super.key,
     required this.onTriggered,
-  }) : super(key: key);
+  });
 
   @override
   State<SosButton> createState() => _SosButtonState();

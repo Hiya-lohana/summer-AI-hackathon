@@ -6,9 +6,9 @@ class ScamTipCard extends StatefulWidget {
   final Tip tip;
 
   const ScamTipCard({
-    Key? key,
+    super.key,
     required this.tip,
-  }) : super(key: key);
+  });
 
   @override
   State<ScamTipCard> createState() => _ScamTipCardState();

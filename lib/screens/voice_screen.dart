@@ -11,7 +11,7 @@ import '../services/gemini_service.dart';
 enum VoiceState { idle, listening, processing, response }
 
 class VoiceScreen extends StatefulWidget {
-  const VoiceScreen({Key? key}) : super(key: key);
+  const VoiceScreen({super.key});
 
   @override
   State<VoiceScreen> createState() => _VoiceScreenState();
