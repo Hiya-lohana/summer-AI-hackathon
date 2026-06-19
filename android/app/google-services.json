@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "415533690944",
+    "project_id": "safenetai-84d11",
+    "storage_bucket": "safenetai-84d11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415533690944:android:b5125333770a5ef5ca6fa5",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDvXbQxigVy9jnBp8aUgb7pASNBmIT3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
